@@ -14,14 +14,12 @@ img.logo{
 }
 
 body{
-  font-family: 'IBM Plex Mono', monospace;
   max-width: 320px;
   margin: 0 auto;
-  
 }
 
 header{
-  width: 320px; height: 44px;
+  width: 100%; height: 44px;
   top: 0%;
   left: 0%;
   z-index: 100;
@@ -30,8 +28,8 @@ header{
 
 .contenedor{
   width: 100%;
-  margin: auto;
-  
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .menu{
@@ -40,11 +38,10 @@ header{
 
 h1{
   color: #060a24;
-  margin-top: 73px;
+  margin-top: 29px;
   margin-left: 16px;
   font-size: 36px;
   font-family: 'IBM Plex Sans', sans-serif;
-  line-height: 42px;
   font-weight: normal;
 }
 
@@ -91,13 +88,10 @@ h1{
     cursor:pointer;
   }
   
-
-
-
   .background{
     margin-top: 24px;
     position: absolute;
-    width: 320px; height: 967.5px;
+    width: 320px; height: 1203px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     transform: skew(0deg,-5deg);
   }
@@ -116,19 +110,17 @@ h1{
   }
   
   
-  img.chap1{
+  .first-chapter{
     margin-top: 21px;
     margin-left: 11px;
+    margin-right: 11px;
+    width: 298px;
+    
   }
 
-  img.chap2{
-    margin-top: 11px;
+  .resto-chapters{
     margin-left: 11px;
-  }
-
-  img.chap3{
-    margin-top: 11px;
-    margin-left: 11px;
+    width: 298px;
   }
 
   img.phone{
@@ -167,43 +159,18 @@ h3{
     font-weight: normal;
   }
   
-  img.grase{
+  .grase{
     width: 320px;
     height: 243px;
     margin-top: 14px;
     display: block;
   }
 
-  img.katie{
+  .resto-invitados{
     width: 320px;
     height: 243px;
     display: block;
     
-  }
-
-  img.margaret{
-    width: 320px;
-    height: 243px;
-    display: block;
-  }
-
-  img.univac{
-    width: 320px;
-    height: 243px;
-    display: block;
-    
-  }
-
-  img.eniac{
-    width: 320px;
-    height: 243px;
-    display: block;
-  }
-
-  img.susan{
-    width: 320px;
-    height: 243px;
-    display: block;
   }
 
   .temas{
@@ -312,7 +279,6 @@ h3{
   
   
   h4 {
-    margin: 0;
     padding-bottom: 36px;
     font-size: 36px;
     text-align: center;
@@ -348,33 +314,28 @@ h3{
 .Copyright{
   margin-top: 24px;
   text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
-.iconos-redes-sociales{
+.icono-spotify{
   margin-left: 45px;
   margin-top: 16px;
 }
 
-.fa-instagram{
-  margin-left: 38px;
-}
-
-.fa-twitter{
-  margin-left: 38px;
-}
-
-.fa-facebook{
-  margin-left: 38px;
-}
-
-.fa-telegram{
+.resto-icons{ 
   margin-left: 38px;
 }
 
 
 /* MEDIA QUERIES*/
 
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 1224px){
+
+  .contenedor{
+    background: red;
+    width: 100%;
+
+  }
 
  
   
